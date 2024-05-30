@@ -33,6 +33,7 @@ kotlin {
     sourceSets {
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
+            implementation(libs.splitties.appcontext)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
@@ -42,6 +43,16 @@ kotlin {
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.koin.core)
+
+            implementation(libs.datastore.preferences)
+            implementation(libs.kotlinx.atomic)
+        }
+        commonTest.dependencies {
+            implementation(kotlin("test"))
+            implementation(kotlin("test-common"))
+            implementation(kotlin("test-annotations-common"))
+            implementation(libs.kotlinx.coroutines.test)
+            implementation(libs.kmp.testing.mockative.core)
         }
 
         // Required by KMM-ViewModel
@@ -50,6 +61,13 @@ kotlin {
             languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
         }
     }
+}
+
+// Required for generating mock classes for test cases
+dependencies {
+    configurations
+        .filter { config -> config.name.startsWith("ksp") && config.name.contains("Test") }
+        .forEach { config -> add(config.name, libs.kmp.testing.mockative.processor) }
 }
 
 android {

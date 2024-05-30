@@ -2,8 +2,8 @@ package com.yanneckreiss.kmpapp.common.injection
 
 import org.koin.dsl.module
 
-val appModule = module {
-
+private val appModule = module {
+    // Nothing to see here yet
 }
 
-val koinModules = listOf(appModule)
+internal val androidNativeKoinModules = listOf(appModule)

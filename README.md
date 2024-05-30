@@ -1,6 +1,6 @@
-# Kotlin Multiplatform Native Apps Tutorial Template - Replace Me
+# DataStore Preferences Showcase For Kotlin Multiplatform - Easy KMP Key-Value Store Solution
 
-Android native part can be found inside `composeApp/src/androidMain`.
+TBD
 
 ### 🙌 Learn More On My
 - [YouTube](https://www.youtube.com/channel/UCqHzmnim9pKgpq57Hm7o2Gg)

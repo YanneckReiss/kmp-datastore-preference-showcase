@@ -1,4 +1,4 @@
-rootProject.name = "KMP-App-Template-Native"
+rootProject.name = "KMP-Datastore-Preference-Showcase"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
