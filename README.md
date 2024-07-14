@@ -1,6 +1,6 @@
 # DataStore Preferences Showcase For Kotlin Multiplatform - Easy KMP Key-Value Store Solution
 
-TBD
+Project for my blog article on [How to use the Jetpack Pferences DataStore with Kotlin Multiplatform](https://medium.com/tech-takeaways/how-to-use-the-jetpack-preference-datastore-with-kotlin-multiplatform-31dc80394d25). 
 
 ### 🙌 Learn More On My
 - [YouTube](https://www.youtube.com/channel/UCqHzmnim9pKgpq57Hm7o2Gg)
